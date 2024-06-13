@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    @apply min-h-screen bg-gradient-to-bl from-Background2 to-Background to-80% font-Poppins
+}
+.navLink .active{
+    color: red;
+}
