@@ -1,0 +1,61 @@
+[
+  {
+    "id": 0,
+    "img": "https://i.ibb.co/nQGGTK0/apiMovie.jpg",
+    "title": "Api Movie",
+    "description": "Pagina Web que muestra un listado de películas con ayuda de API TMDB",
+    "reactJs": [
+      "useState",
+      "useEffect",
+      "React-Router-Dom",
+      "React-Lazy-Load-Image-Component"
+    ],
+    "Skill": [
+      "React",
+      "Tailwind Css"
+    ],
+    "tailwindCss": [
+      "Mobile First",
+      "Desktop"
+    ],
+    "LiveSite": " https://diego2drm.github.io/apiMovies/",
+    "Repository": "https://github.com/Diego2Drm/apiMovies"
+  },
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/gVdzCjR/social-media.jpg",
+    "title": "Social media dashboard",
+    "description": "Alterna el tema de color según sus preferencias",
+    "reactJs": [
+      "useState",
+      "useEffect"
+    ],
+    "Skill": [
+      "React",
+      "Tailwind Css"
+    ],
+    "tailwindCss": [
+      "Dark Mode",
+      "Mobile First",
+      "Desktop"
+    ],
+    "LiveSite": "https://diego2drm.github.io/-social-mediaThemeSwitcher/",
+    "Repository": "https://github.com/Diego2Drm/-social-mediaThemeSwitcher"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/MNZfdJR/sunnyside.jpg",
+    "title": "Agency landing page",
+    "description": "Ver el diseño óptimo para el sitio según el tamaño de pantalla del dispositivo",
+    "reactJs": [],
+    "Skill": [
+      "Tailwind Css"
+    ],
+    "tailwindCss": [
+      "Mobile  First",
+      "Desktop"
+    ],
+    "LiveSite": "https://diego2drm.github.io/sunnyside-agency-landing-page/",
+    "Repository": "https://github.com/Diego2Drm/sunnyside-agency-landing-page"
+  }
+]
