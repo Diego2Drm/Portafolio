@@ -78,7 +78,7 @@ function NavBar() {
                 to="Contact"
                 spy={true}
                 smooth={true}
-                offset={-110}
+                offset={-410}
                 duration={500}
               >
                 Contacto
