@@ -1,6 +1,7 @@
 import { NavBar } from "./Components/NavBar"
-import { AboutMe } from "./Components/Projects/AboutMe/AboutMe"
+import { AboutMe } from "./Components/AboutMe/AboutMe"
 import { Projects } from "./Components/Projects/Projects"
+import { Skills } from "./Components/Skills/Skills"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <AboutMe />
       <Projects />
+      <Skills />
     </>
   )
 }
