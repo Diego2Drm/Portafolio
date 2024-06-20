@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <>
       <header className="fixed w-full top-0 left-0 z-10 flex justify-between items-center bg-Background py-6 px-4 text-white shadow-sm shadow-white
-      xl:hidden">
+      lg:hidden">
         <Link
               className="text-2xl text-white"
               to="AboutMe"
@@ -71,18 +71,6 @@ function NavBar() {
                 duration={500}
               >
                 Habilidades
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="text-blue-300 border-b-2 border-blue-300 pb-[1px]"
-                to="Contact"
-                spy={true}
-                smooth={true}
-                offset={-110}
-                duration={500}
-              >
-                Contacto
               </Link>
             </li>
           </ul>

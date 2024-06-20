@@ -14,7 +14,7 @@ function SideBar() {
   }
 
   return (
-    <aside className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-full p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden xl:flex xl:flex-col duration-500`}>
+    <aside className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-full p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden lg:flex lg:flex-col duration-500`}>
 
       <h2 className="text-2xl text-white duration-500">{isOpen ? "Diego." : "Die..."}</h2>
 
@@ -24,7 +24,7 @@ function SideBar() {
       </div>
 
       <nav className="mt-10">
-        <ul className="*:cursor-pointer flex flex-col gap-28 items-center">
+        <ul className="*:cursor-pointer flex flex-col gap-36 items-center">
           <li>
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
@@ -96,23 +96,6 @@ function SideBar() {
             </Link>
           </li>
 
-          <li>
-            <Link
-              className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
-              activeClass="text-blue-300 bg-lightWhite"
-              to="Contact"
-              spy={true}
-              smooth={true}
-              offset={-110}
-              duration={500}
-              onClick={handleIconOpen}
-            >
-              <div className="text-3xl">
-                <ion-icon name="mail"></ion-icon>
-              </div>
-              <span className={`${!isOpen && "hidden"} origin-left duration-700`}>Contacto</span>
-            </Link>
-          </li>
         </ul>
       </nav>
     </aside>

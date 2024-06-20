@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-    @apply min-h-screen bg-gradient-to-bl from-Background2 to-Background to-80% font-Poppins
+    @apply min-h-screen bg-Background font-Poppins
 }
 .navLink .active{
     color: red;
