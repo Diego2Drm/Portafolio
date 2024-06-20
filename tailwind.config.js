@@ -13,6 +13,7 @@ export default {
         "action" : "#00EEFF",
         "text2" : "#1DE5FF",
         "text3" : "#118999",
+        "lightWhite" : "rgba(255,255,255,0.17)",
       },
       fontFamily: {
         "Poppins": [ "Poppins", " sans-serif"] ,

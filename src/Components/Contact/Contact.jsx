@@ -5,7 +5,7 @@ import linkedin from "../../assets/linkedin.png"
 
 function Contact() {
   return (
-    <section id="Contact" className="h-[50vh] p-5">
+    <section id="Contact" className="min-h-screen p-5">
       <h2 className="text-blue-500  text-3xl mb-5 tracking-[5px]">Contacto</h2>
       <div>
         <div className="flex text-blue-300 items-center gap-3 text-lg">
