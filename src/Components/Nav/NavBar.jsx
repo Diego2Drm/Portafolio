@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function NavBar() {
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <>
@@ -23,8 +23,8 @@ function NavBar() {
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
 
-        <nav className={`absolute w-full bg-Background2 z-20 border-t-2 p-7 top-20 ${open ? "left-0" : "-left-[1030px]"} transition-all duration-500`}>
-          <ul className="space-y-3 *:text-lg">
+        <nav className={`absolute w-1/2 h-screen bg-[#102C57] shadow-sm shadow-white z-20 border-t-2 p-7 top-20 ${open ? "right-0" : "-right-[1030px]"} transition-all duration-500`}>
+          <ul className="*:text-lg flex flex-col items-center gap-10">
             <li> <Link
               activeClass="text-blue-300 border-b-2 border-blue-300 pb-[1px]"
               to="AboutMe"
