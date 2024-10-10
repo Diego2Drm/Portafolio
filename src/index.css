@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    @apply min-h-screen bg-Background font-Poppins
+html {
+  @apply min-h-screen bg-Background font-Poppins;
 }
-.navLink .active{
-    color: red;
+
+.text-shadow {
+  text-shadow: 
+  0 0 5px #1c5e8f, 
+  0 0 10px #1c5e8f, 
+  0 0 15px #1c5e8f, 
+  0 0 20px #fff,
+  0 0 30px #fff, 
+  0 0 40px #fff, 
+  0 0 55px #fff, 
+  0 0 75px #fff;
+}
+.img-shadow:hover{
+  filter: drop-shadow(1rem 1rem 1rem #018cf6);
 }
