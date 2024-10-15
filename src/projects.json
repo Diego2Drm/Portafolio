@@ -11,7 +11,7 @@
       "React-Lazy-Load-Image-Component"
     ],
     "Skill": [
-      "React",
+      "React JS",
       "Tailwind Css"
     ],
     "tailwindCss": [
@@ -23,7 +23,7 @@
   },
   {
     "id": 1,
-    "img": "https://i.ibb.co/gVdzCjR/social-media.jpg",
+    "img": "https://i.ibb.co/dQjQWGm/social-media-dahsboard-dark.png",
     "title": "Social media dashboard",
     "description": "Alterna el tema de color según sus preferencias",
     "reactJs": [
@@ -31,7 +31,7 @@
       "useEffect"
     ],
     "Skill": [
-      "React",
+      "React JS",
       "Tailwind Css"
     ],
     "tailwindCss": [
