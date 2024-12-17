@@ -11,7 +11,7 @@ function Modal({ open, onclose }) {
           onClick={onclose}>
           <ion-icon name="close-circle-outline"></ion-icon>
         </div>
-        <img className="md:w-[550px] lg:w-[600px] rounded-xl" src={context.certificateImg} alt="" />
+        <img className="md:w-[550px] lg:w-[600px] rounded-xl" src={context.showCertificateImg} alt="" />
       </section>
   )
 }

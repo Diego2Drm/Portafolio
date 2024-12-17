@@ -6,6 +6,7 @@ import { Education } from "./Components/Education/Education";
 import { SideBar } from "./Components/Nav/SideBar";
 import { DataProvider } from "./Context/Context";
 
+
 function App() {
   return (
     <>

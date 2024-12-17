@@ -2,14 +2,14 @@ import React, { useContext, useState } from "react";
 import { Modal } from "./Modal";
 import { DataContext } from "../../Context/Context";
 import { motion } from "framer-motion";
-import { Element } from "react-scroll";
+
 
 function Education() {
   const [open, setOpen] = useState(false);
   const context = useContext(DataContext);
   const showCertificates = (url) => {
     setOpen(!open);
-    context.setCertificateImg(url);
+    context.setShowCertificateImg(url);
   };
 
   return (
@@ -22,20 +22,20 @@ function Education() {
       </motion.h2>
 
       <article className="flex flex-wrap gap-10 xl:mt-5">
-        {context.imgUrl.map((link) => (
-          <div className="w-80" key={link.id}>
+        {context.certificateImg.map((item) => (
+          <div className="w-80" key={item.id}>
             <motion.figure
               className="w-80 mb-5 border-2 border-blue-500 rounded-3xl overflow-hidden"
-              onClick={() => showCertificates(link.url)}
+              onClick={() => showCertificates(item.certification)}
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {
-                duration: 1, delay: link.id / 4
+                duration: 1, delay: item.id / 4
               }}}
               viewport={{once: true, amount: 0.8}}
             >
               <img
                 className="rounded-3xl duration-500 hover:scale-125 cursor-pointer"
-                src={link.url}
+                src={item.certification}
                 alt="certificate"
               />
             </motion.figure>
