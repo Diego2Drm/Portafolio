@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "img": "https://i.ibb.co/nQGGTK0/apiMovie.jpg",
+    "img": "src/assets/projects-images/api-movie.png",
     "title": "Api Movie",
     "description": "Pagina Web que muestra un listado de películas con ayuda de API TMDB",
     "reactJs": [
@@ -14,16 +14,12 @@
       "React JS",
       "Tailwind Css"
     ],
-    "tailwindCss": [
-      "Mobile First",
-      "Desktop"
-    ],
     "LiveSite": " https://diego2drm.github.io/apiMovies/",
     "Repository": "https://github.com/Diego2Drm/apiMovies"
   },
   {
     "id": 1,
-    "img": "https://i.ibb.co/dQjQWGm/social-media-dahsboard-dark.png",
+    "img": "src/assets/projects-images/social-media-dashboard.png",
     "title": "Social media dashboard",
     "description": "Alterna el tema de color según sus preferencias",
     "reactJs": [
@@ -34,28 +30,98 @@
       "React JS",
       "Tailwind Css"
     ],
-    "tailwindCss": [
-      "Dark Mode",
-      "Mobile First",
-      "Desktop"
-    ],
     "LiveSite": "https://diego2drm.github.io/-social-mediaThemeSwitcher/",
     "Repository": "https://github.com/Diego2Drm/-social-mediaThemeSwitcher"
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co/MNZfdJR/sunnyside.jpg",
+    "img": "src/assets/projects-images/agency-landing-page.png",
     "title": "Agency landing page",
-    "description": "Ver el diseño óptimo para el sitio según el tamaño de pantalla del dispositivo",
+    "description": "Visualizar el diseño óptimo de la interfaz según el tamaño de la pantalla del dispositivo",
     "reactJs": [],
     "Skill": [
       "Tailwind Css"
     ],
-    "tailwindCss": [
-      "Mobile  First",
-      "Desktop"
-    ],
     "LiveSite": "https://diego2drm.github.io/sunnyside-agency-landing-page/",
     "Repository": "https://github.com/Diego2Drm/sunnyside-agency-landing-page"
+  },
+  {
+    "id": 3,
+    "img": "src/assets/projects-images/news-homepage.png",
+    "title": "News Homepage",
+    "description": "Visualizar el diseño óptimo de la interfaz según el tamaño de la pantalla del dispositivo.",
+    "reactJs": [],
+    "Skill": [
+      "React JS",
+      "Bootstrap 5",  
+      "Sass"
+    ],
+    "LiveSite": "https://news-homepage-main-diego-2d.netlify.app/",
+    "Repository": "https://github.com/Diego2Drm/news-homepage"
+  },
+  {
+    "id": 4,
+    "img": "src/assets/projects-images/e-commerce-product-page.png",
+    "title": "E-commerce product page",
+    "description": "Desarrollo de una página de producto para comercio electrónico que abre una galería de imágenes al hacer clic en la imagen principal y permite contabilizar la cantidad de producto deseado",
+    "reactJs": [],
+    "Skill": [
+      "React JS",
+      "Css Module"
+    ],
+    "LiveSite": "https://diego2drm.github.io/ecommerce-product/",
+    "Repository": "https://github.com/Diego2Drm/ecommerce-product"
+  },
+  {
+    "id": 5,
+    "img": "src/assets/projects-images/interactive-card-details-form.png",
+    "title": "Interactive card details form",
+    "description": "Relleno de formulario interactivo. Aparecerán errores si no se responde adecuadamente.",
+    "reactJs": [],
+    "Skill": [
+      "React JS + TypeScript",
+      "Tailwind Css"
+    ],
+    "LiveSite": "https://diego2drm.github.io/interactive-card-details-form/",
+    "Repository": "https://github.com/Diego2Drm/interactive-card-details-form"
+  },
+  {
+    "id": 6,
+    "img": "src/assets/projects-images/loopstudios-landing-page.png",
+    "title": "Loopstudios landing page",
+    "description": "Visualizar el diseño óptimo de la interfaz según el tamaño de la pantalla del dispositivo.",
+    "reactJs": [],
+    "Skill": [
+      "React JS",
+      "Sass Css"
+    ],
+    "LiveSite": "https://loopstudios-landing-page-diego-2d.netlify.app/",
+    "Repository": "https://github.com/Diego2Drm/Loopstudios-landing-page"
+  },
+  {
+    "id": 7,
+    "img": "src/assets/projects-images/time-tracking-dashboard.png",
+    "title": "Time tracking dashboard",
+    "description": "Cambiar entre la visualización de estadísticas diarias, semanales y mensuales",
+    "reactJs": [],
+    "Skill": [
+      "React JS + TypeScript",
+      "Css Module"
+    ],
+    "LiveSite": "https://diego2drm.github.io/Time-tracking-dashboard/#/weekly",
+    "Repository": "https://github.com/Diego2Drm/Time-tracking-dashboard"
+  },
+  {
+    "id": 8,
+    "img": "src/assets/projects-images/room-homepage.png",
+    "title": "Room Homepage",
+    "description": "Navegar por el control deslizante utilizando el mouse/trackpad o el teclado",
+    "reactJs": [],
+    "Skill": [
+      "React JS + TypeScript",
+      "Css Module"
+    ],
+    "LiveSite": "https://diego2d-room-homepage.netlify.app/",
+    "Repository": "https://github.com/Diego2Drm/Room-homepage"
   }
 ]
