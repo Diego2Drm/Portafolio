@@ -17,6 +17,6 @@ html {
   0 0 55px #fff, 
   0 0 75px #fff;
 }
-.img-shadow:hover{
-  filter: drop-shadow(1rem 1rem 1rem #018cf6);
+.img-shadow{
+  filter: drop-shadow(1rem .5rem 3rem #018cf6);
 }
