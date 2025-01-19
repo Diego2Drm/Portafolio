@@ -5,7 +5,7 @@ function SideBar() {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  function handleOpen(){
+  function handleOpen() {
     setIsOpen(!isOpen)
   }
 
@@ -14,7 +14,8 @@ function SideBar() {
   }
 
   return (
-    <aside className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-full p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden lg:flex lg:flex-col duration-500`}>
+    <aside
+      className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-[100vh] p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden lg:flex lg:flex-col duration-500`}>
 
       <h2 className="text-2xl text-white duration-500">{isOpen ? "Diego." : "Die..."}</h2>
 
@@ -23,8 +24,8 @@ function SideBar() {
         <ion-icon name={isOpen ? "arrow-back-circle" : "arrow-forward-circle"}></ion-icon>
       </div>
 
-      <nav className="mt-10">
-        <ul className="*:cursor-pointer flex flex-col gap-36 items-center">
+      <nav className="mt-10 h-full">
+        <ul className="flex flex-col justify-between items-center h-full *:cursor-pointer">
           <li>
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
@@ -50,7 +51,7 @@ function SideBar() {
               to="Projects"
               spy={true}
               smooth={true}
-              offset={-110}
+              offset={-150}
               duration={500}
               onClick={handleIconOpen}
             >
@@ -68,7 +69,7 @@ function SideBar() {
               to="Education"
               spy={true}
               smooth={true}
-              offset={-110}
+              offset={-99}
               duration={500}
               onClick={handleIconOpen}
             >
@@ -85,7 +86,7 @@ function SideBar() {
               to="Skills"
               spy={true}
               smooth={true}
-              offset={-110}
+              offset={-30}
               duration={500}
               onClick={handleIconOpen}
             >
