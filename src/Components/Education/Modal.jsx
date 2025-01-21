@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../Context/Context";
+import { courseMap } from "../../utils/images";
 
 function Modal({ open, onclose }) {
 
@@ -11,7 +12,7 @@ function Modal({ open, onclose }) {
           onClick={onclose}>
           <ion-icon name="close-circle-outline"></ion-icon>
         </div>
-        <img className="md:w-[550px] lg:w-[600px] rounded-xl" src={context.showCertificateImg} alt="" />
+        <img className="md:w-[550px] lg:w-[600px] rounded-xl" src={courseMap[context.showCertificateImg]} alt="" />
       </section>
   )
 }
