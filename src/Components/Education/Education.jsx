@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Modal } from "./Modal";
 import { DataContext } from "../../Context/Context";
 import { motion } from "framer-motion";
+import { courseMap } from "../../utils/images";
 
 
 function Education() {
@@ -29,13 +30,13 @@ function Education() {
               onClick={() => showCertificates(item.certification)}
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {
-                duration: 1, delay: item.id / 4
+                duration: 1, delay: item.id / 9
               }}}
               viewport={{once: true, amount: 0.8}}
             >
               <img
                 className="rounded-3xl duration-500 hover:scale-125 cursor-pointer"
-                src={item.certification}
+                src={courseMap[item.certification]}
                 alt="certificate"
               />
             </motion.figure>

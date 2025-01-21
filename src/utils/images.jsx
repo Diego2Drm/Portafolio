@@ -7,7 +7,12 @@ import img6 from '../assets/projects-images/interactive-card-details-form.png'
 import img7 from '../assets/projects-images/loopstudios-landing-page.png'
 import img8 from '../assets/projects-images/time-tracking-dashboard.png'
 import img9 from '../assets/projects-images/room-homepage.png'
-
+import course1 from '../assets/certifications/curso-practico-frontend-dev.jpeg'
+import course2 from '../assets/certifications/curso-definitivo-html-css.jpeg'
+import course3 from '../assets/certifications/curso-responsive-design.jpeg'
+import course4 from '../assets/certifications/curso-fundamentos-js.jpeg'
+import course5 from '../assets/certifications/curso-fundamentos-sass.jpeg'
+import course6 from '../assets/certifications/curso-react-js-tailwindcss.jpeg'
 
 
 export const ImageMap = {
@@ -20,4 +25,13 @@ export const ImageMap = {
   "src/assets/projects-images/loopstudios-landing-page.png": img7,
   "src/assets/projects-images/time-tracking-dashboard.png": img8,
   "src/assets/projects-images/room-homepage.png": img9
-}
+};
+
+export const courseMap = {
+  "src/assets/certifications/curso-practico-frontend-dev.jpeg": course1,
+  "src/assets/certifications/curso-definitivo-html-css.jpeg": course2,
+  "src/assets/certifications/curso-responsive-design.jpeg": course3,
+  "src/assets/certifications/curso-fundamentos-js.jpeg": course4,
+  "src/assets/certifications/curso-fundamentos-sass.jpeg": course5,
+  "src/assets/certifications/curso-react-js-tailwindcss.jpeg": course6,
+} 
