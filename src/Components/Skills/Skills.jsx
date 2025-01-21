@@ -1,30 +1,99 @@
 import React from "react";
-import tailwind from "../../assets/tailwind-css-icon.png";
-import gitLogo from "../../assets/git-logo.png";
-import bootstrap from "../../assets/bootstrap.png";
-import typescript from "../../assets/typescript.png";
 import { motion } from "framer-motion";
+import htmlImg from '../../assets/skills-images/html-5.png'
+import cssImg from '../../assets/skills-images/css3.png'
+import javascriptImg from '../../assets/skills-images/javascript.png'
+import tailwindImg from '../../assets/skills-images/tailwind-css.png'
+import sasstImg from '../../assets/skills-images/sass.png'
+import bootstrapImg from '../../assets/skills-images/bootstrap-5.png'
+import reactImg from '../../assets/skills-images/react.png'
+import typescriptImg from '../../assets/skills-images/typescript.png'
+import gitImg from '../../assets/skills-images/git.png'
+
+
 
 function Skills() {
 
-  const imgVariants = (delay) => {
-   return {
-    offscreen: {
-      y: -100,
-      opacity: 0,
+  const languages = [
+    {
+      title: "HTML 5",
+      img: htmlImg
     },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 2,
-        delay: delay,
+    {
+      title: "Css 3",
+      img: cssImg,
+    },
+    {
+      title: "JavaScript",
+      img: javascriptImg,
+    },
+  ];
+
+  const frameworks = [
+    {
+      title: "Tailwind Css",
+      img: tailwindImg,
+    },
+    {
+      title: "Sass",
+      img: sasstImg,
+    },
+    {
+      title: "Bootstrap 5",
+      img: bootstrapImg,
+    },
+  ];
+
+  const libraries = [
+    {
+      title: "React Js",
+      img: reactImg,
+    },
+    {
+      title: "TypeScript",
+      img: typescriptImg,
+    },
+  ]
+
+  const imgVariants = (delay) => {
+    return {
+      offscreen: {
+        y: -100,
+        opacity: 0,
+      },
+      onscreen: {
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          bounce: 0.5,
+          duration: 2,
+          delay: delay,
+        }
       }
     }
-   }
   };
+
+  const text = () => {
+    return{
+      textHidden: {
+        opacity: 0,
+        scale: 0,
+        transition: {
+          duration: 1,
+          ease: "easeInOut", 
+        }
+      },
+      textShow: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          duration: 1,
+          ease: "easeInOut", 
+        }
+      },
+    }
+  }
 
   return (
     <section
@@ -35,90 +104,60 @@ function Skills() {
         Habilidades
       </h2>
 
-      <div className="md:pl-10">
-        <h4 className="text-blue-400 pl-6 text-2xl mb-8 md:pl-0">Lenguaje</h4>
+      <article>
+        <h4 className="text-blue-300 font-medium pl-6 text-2xl mb-8 md:pl-0">Lenguaje</h4>
 
-        <div className="flex flex-wrap justify-center gap-4 lg:justify-start lg:gap-10 lg:px-5">
-          <figure className="flex flex-col text-lg">
-            <motion.div variants={imgVariants(.5)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="text-[#e34c26] text-6xl md:text-8xl">
-              <ion-icon name="logo-html5"></ion-icon>
-            </motion.div>
-            <figcaption className="italic text-white">HTML 5</figcaption>
-          </figure>
+        <div className="flex flex-wrap justify-center gap-4 md:justify-start lg:gap-10">
+          {
+            languages.map((language, i) => (
+              <figure key={i} className="flex flex-col">
+                <motion.img variants={imgVariants(i * .2)} initial="offscreen" whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} src={language.img} alt={language.title} />
+                <motion.figcaption variants={text()} initial="textHidden" whileInView="textShow" viewport={{ once: true, amount: 0.8 }} className="text-white text-center italic text-lg">{language.title}</motion.figcaption>
+              </figure>
+            ))
+          }
+        </div>
+      </article>
 
-          <figure className="flex flex-col text-white text-lg">
-            <motion.div variants={imgVariants(.7)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="text-[#2965f1] text-6xl md:text-8xl">
-              <ion-icon name="logo-css3"></ion-icon>
-            </motion.div>
-            <figcaption className="italic">CSS 3</figcaption>
-          </figure>
+      <article className="mt-10 lg:mt-0">
+        <h4 className="text-blue-300 font-medium pl-6 text-2xl mb-8 md:pl-0">Frameworks</h4>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 md:justify-start lg:gap-10">
+          {
+            frameworks.map((framework, i) => (
+              <figure key={i} className="flex flex-col items-center lg:items-start">
+                <motion.img variants={imgVariants(i * .2)} initial="offscreen" whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} src={framework.img} alt={framework.title} />
+                <motion.figcaption variants={text()} initial="textHidden" whileInView="textShow" viewport={{ once: true, amount: 0.8 }} className="text-white italic text-lg">{framework.title}</motion.figcaption>
+              </figure>
+            ))
+          }
+        </div>
+      </article>
 
-          <figure className="flex flex-col text-white text-lg">
-            <motion.div variants={imgVariants(.9)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="text-[#F0DB4F] text-6xl md:text-8xl">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </motion.div>
-            <figcaption className="italic">JavaScript</figcaption>
+      <article className="mt-10 lg:mt-0">
+        <h4 className="text-blue-300 font-medium pl-6 text-2xl mb-8 md:pl-0">Librerías</h4>
+        <div className="w-full flex items-center justify-center md:justify-start gap-5">
+          {
+            libraries.map((library, i) => (
+              <figure key={i} className="flex flex-col">
+                <motion.img variants={imgVariants(i * .2)} initial="offscreen" whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} src={library.img} alt={library.title} />
+                <motion.figcaption variants={text()} initial="textHidden" whileInView="textShow" viewport={{ once: true, amount: 0.8 }} className="text-white text-center italic text-lg">{library.title}</motion.figcaption>
+              </figure>
+            ))
+          }
+        </div>
+      </article>
+
+      <article className="mt-10 lg:mt-0">
+        <h4 className="text-blue-300 font-medium pl-6 text-2xl mb-8 md:pl-0">Control De Versiones</h4>
+        <div className="w-full flex items-center justify-center md:justify-start gap-5">
+          <figure className="flex flex-col">
+            <motion.img variants={imgVariants(.2)} initial="offscreen"
+              whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} src={gitImg} alt="git"
+            />
+            <motion.figcaption variants={text()} initial="textHidden" whileInView="textShow" viewport={{ once: true, amount: 0.8 }} className="text-white text-center italic text-lg">Git</motion.figcaption>
           </figure>
         </div>
-      </div>
-
-      <div className="mt-5 md:pl-10 md:mt-0">
-        <h4 className="text-blue-400 pl-6 text-2xl mb-8 md:pl-0">Frameworks</h4>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:justify-start lg:gap-10 lg:px-5">
-          <figure className="flex flex-col items-center lg:items-start">
-            <motion.img variants={imgVariants(1)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="w-[60px] h-[60px] md:w-24 md:h-24" src={tailwind} alt="tailwind css" />
-            <figcaption className="italic mt-[18px] text-white">
-              Tailwind CSS
-            </figcaption>
-          </figure>
-          <figure className="text-lg text-white">
-            <motion.div variants={imgVariants(1.2)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="text-pink-400 text-6xl md:text-8xl">
-              <ion-icon name="logo-sass"></ion-icon>
-            </motion.div>
-            <figcaption className="italic">Sass</figcaption>
-          </figure>
-          <figure className="flex flex-col items-center lg:items-start">
-            <motion.img variants={imgVariants(1.4)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="w-[60px] h-[60px] md:w-24 md:h-24" src={bootstrap} alt="bootstrap-5" />
-            <figcaption className="italic mt-[18px] text-white">Bootstrap 5</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div className="mt-5 md:pl-10 md:mt-0">
-        <h4 className="text-blue-400 pl-6 text-2xl mb-8 md:pl-0">Librerías</h4>
-        <div className="w-full flex items-center justify-center lg:justify-start gap-5">
-          <figure className="flex flex-col items-center lg:items-start">
-            <motion.div variants={imgVariants(1.6)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="text-[#5fd6f6] text-6xl md:text-8xl">
-              <ion-icon name="logo-react"></ion-icon>
-            </motion.div>
-            <figcaption className="italic mt-5 text-white">React Js + </figcaption>
-          </figure>
-          <figure className="flex flex-col items-center lg:items-start">
-            <motion.img variants={imgVariants(1.8)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="w-[60px] h-[60px] md:w-24 md:h-24" src={typescript} alt="typeScript" />
-            <figcaption className="italic mt-8 text-white">TypeScript</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div className="mt-5 md:pl-10 md:mt-0">
-        <h4 className="text-blue-400 pl-6 text-2xl mb-8 md:pl-0">
-          Control De Versiones
-        </h4>
-        <figure className="w-full flex flex-col items-center lg:items-start">
-          <motion.img variants={imgVariants(2)} initial="offscreen"
-              whileInView="onscreen" viewport={{ once: true, amount: 0.8}} className="w-[60px] h-[60px] md:w-24 md:h-24" src={gitLogo} alt="gitLogo" 
-          />
-          <figcaption className="italic mt-5 text-white">Git</figcaption>
-        </figure>
-      </div>
+      </article>
     </section>
   );
 }
