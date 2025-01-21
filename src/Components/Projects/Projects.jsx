@@ -38,7 +38,7 @@ function Projects() {
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1, transition: {
-                  duration: 2, delay: project.id / 2,
+                  duration: 2, delay: project.id / 9,
                 }
               }}
               viewport={{ once: true, amount: 0.8 }}
