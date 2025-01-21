@@ -18,9 +18,9 @@ function Education() {
       id="Education"
       className="w-full flex flex-col p-5 gap-10 min-h-screen mb-10 lg:pl-64 lg:items-start"
     >
-      <motion.h2 initial={{opacity: 0, x: -60}} whileInView={{opacity: 1, x: 0, transition: { duration: 1, delay: 1}}} viewport={{once: true, amount: 0.8}} className="text-blue-500 font-bold text-3xl tracking-[5px]">
+      <h2 className="text-blue-500 font-bold text-3xl tracking-[5px]">
         Educación
-      </motion.h2>
+      </h2>
 
       <article className="flex flex-wrap gap-10 xl:mt-5">
         {context.certificateImg.map((item) => (
