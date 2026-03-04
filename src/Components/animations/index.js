@@ -1,0 +1,6 @@
+export * from './aboutMeVariants'
+export * from './cvVariants'
+export * from './downImgVariants'
+export * from './emailVariants'
+export * from './textShowVariants'
+export * from './upTextVariants'

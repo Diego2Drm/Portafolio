@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { itemVariants } from "../animations/itemVariants";
+import { listVariants } from "../animations/listVariants";
 
 function SideBar() {
 
@@ -13,6 +16,8 @@ function SideBar() {
     setIsOpen(true)
   }
 
+
+
   return (
     <aside
       className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-[100vh] p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden lg:flex lg:flex-col duration-500`}>
@@ -25,8 +30,8 @@ function SideBar() {
       </div>
 
       <nav className="mt-10 h-full">
-        <ul className="flex flex-col justify-between items-center h-full *:cursor-pointer">
-          <li>
+        <motion.ul variants={listVariants} initial="hidden" animate="visible" className="flex flex-col justify-between items-center h-full *:cursor-pointer">
+          <motion.li variants={itemVariants}>
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
               activeClass="text-blue-300 bg-lightWhite"
@@ -42,8 +47,9 @@ function SideBar() {
               </div>
               <span className={`${!isOpen && "hidden"} origin-left duration-700`}>Sobre Mi</span>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+
+          <motion.li variants={itemVariants}>
 
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
@@ -60,9 +66,9 @@ function SideBar() {
               </div>
               <span className={`${!isOpen && "hidden"} origin-left duration-700 `}>Proyectos</span>
             </Link>
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li variants={itemVariants}>
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
               activeClass="text-blue-300 bg-lightWhite"
@@ -78,8 +84,9 @@ function SideBar() {
               </div>
               <span className={`${!isOpen && "hidden"} origin-left duration-700`}>Educación</span>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+
+          <motion.li variants={itemVariants}>
             <Link
               className="hover:bg-lightWhite flex justify-center items-center gap-4 p-3 text-blue-100"
               activeClass="text-blue-300 bg-lightWhite"
@@ -95,10 +102,13 @@ function SideBar() {
               </div>
               <span className={`${!isOpen && "hidden"} origin-left duration-700`}>Habilidades</span>
             </Link>
-          </li>
+          </motion.li>
 
-        </ul>
+        </motion.ul>
       </nav>
+
+
+
     </aside>
   );
 };
