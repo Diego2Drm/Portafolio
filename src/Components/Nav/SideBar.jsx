@@ -3,10 +3,13 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { itemVariants } from "../animations/itemVariants";
 import { listVariants } from "../animations/listVariants";
+import { MyNameAnimation } from "./MyNameAnimation";
 
 function SideBar() {
 
   const [isOpen, setIsOpen] = useState(false)
+  const myName = "Diego";
+  const myNameClose = "Die...";
 
   function handleOpen() {
     setIsOpen(!isOpen)
@@ -22,7 +25,14 @@ function SideBar() {
     <aside
       className={`fixed left-0 shadow-md shadow-white bg-gradient-to-bl from-Background2 to-Background to-80% h-[100vh] p-5 z-10 ${isOpen ? "w-48" : "w-28"} hidden lg:flex lg:flex-col duration-500`}>
 
-      <h2 className="text-2xl text-white duration-500">{isOpen ? "Diego." : "Die..."}</h2>
+      <h2 className="text-2xl text-white duration-500">
+        {isOpen ?
+          <MyNameAnimation myName={myName} styles="text-3xl" />
+          :
+          <MyNameAnimation myName={myNameClose} styles="text-sm" />
+        }
+      </h2>
+
 
       <div className="absolute -right-3 top-6 text-white text-3xl cursor-pointer"
         onClick={handleOpen}>

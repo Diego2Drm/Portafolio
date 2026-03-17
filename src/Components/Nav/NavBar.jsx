@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { MyNameAnimation } from "./MyNameAnimation";
 
 function NavBar() {
 
@@ -10,14 +11,13 @@ function NavBar() {
       <header className="fixed w-full top-0 left-0 z-10 flex justify-between items-center bg-Background py-6 px-4 text-white shadow-sm shadow-white
       lg:hidden">
         <Link
-              className="text-2xl text-white"
               to="AboutMe"
               spy={true}
               smooth={true}
               offset={-150}
               duration={500}
             >
-              Diego.
+             <MyNameAnimation myName="Diego." styles="text-2xl"/>
             </Link>
         <div className="text-2xl" onClick={() => setOpen(!open)}>
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
