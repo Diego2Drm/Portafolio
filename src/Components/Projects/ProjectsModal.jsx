@@ -26,7 +26,7 @@ function ProjectsModal({ open, close }) {
 
         <div className="flex flex-col gap-3 mt-4 text-white">
           <h4 className="font-bold text-2xl">{context.addTitle}</h4>
-          <p className="font-semibold">Descipcón: {context.addDescription}</p>
+          <p className="font-semibold">Descripción: {context.addDescription}</p>
           Herramientas Utilizadas:
           <ul className="italic list-disc pl-10">
             <span className="font-semibold"> </span>
@@ -47,7 +47,7 @@ function ProjectsModal({ open, close }) {
               href={context.addRepository}
               target="_blank"
             >
-              Repository Github
+              Repositorio Github
             </a>
           </div>
         </div>

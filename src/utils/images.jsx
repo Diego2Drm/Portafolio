@@ -7,6 +7,9 @@ import img6 from '../assets/projects-images/interactive-card-details-form.png'
 import img7 from '../assets/projects-images/loopstudios-landing-page.png'
 import img8 from '../assets/projects-images/time-tracking-dashboard.png'
 import img9 from '../assets/projects-images/room-homepage.png'
+import img10 from '../assets/projects-images/digital-baking.png'
+import img11 from '../assets/projects-images/recipes-api.png'
+import img12 from '../assets/projects-images/property-listing.png'
 import course1 from '../assets/certifications/curso-practico-frontend-dev.jpeg'
 import course2 from '../assets/certifications/curso-definitivo-html-css.jpeg'
 import course3 from '../assets/certifications/curso-responsive-design.jpeg'
@@ -24,7 +27,10 @@ export const ImageMap = {
   "src/assets/projects-images/interactive-card-details-form.png": img6,
   "src/assets/projects-images/loopstudios-landing-page.png": img7,
   "src/assets/projects-images/time-tracking-dashboard.png": img8,
-  "src/assets/projects-images/room-homepage.png": img9
+  "src/assets/projects-images/room-homepage.png": img9,
+  "src/assets/projects-images/digital-baking.png": img10,
+  "src/assets/projects-images/recipes-api.png": img11,
+  "src/assets/projects-images/property-listing.png": img12,
 };
 
 export const courseMap = {

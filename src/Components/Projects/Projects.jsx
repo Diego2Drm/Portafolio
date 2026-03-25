@@ -19,6 +19,13 @@ function Projects() {
     setOpenModal(true);
   };
 
+  const frameworkColors = {
+    "React JS": "#61DAFB",
+    "Angular": "#DD0031",
+    "Astro": "#FF5D01",
+    "JavaScript": "##F0DB4F"
+  };
+
   return (
     <section
       id="Projects"
@@ -31,7 +38,7 @@ function Projects() {
         {context.info.map((project) => (
           <article key={project.id} className="mb-10 lg:w-80">
             <motion.div
-              className="w-[335px] h-44 overflow-hidden  border-4 border-white rounded-xl"
+              className="w-[335px] h-44 overflow-hidden  border-4 border-white rounded-xl relative"
               onClick={() =>
                 handleInfo(project.title, project.description, project.img, project.LiveSite, project.Repository, project.Skill)
               }
@@ -46,8 +53,14 @@ function Projects() {
               <img
                 src={ImageMap[project.img]}
                 alt={project.title}
-                className="w-full cursor-pointer hover:scale-125 duration-700"
+                className="w-full h-full cursor-pointer hover:scale-125 duration-700"
               />
+
+              <p className="absolute top-2 left-2 py-1 px-2 rounded text-sm"
+                style={{ backgroundColor: frameworkColors[project.Skill[0]] }}
+              >
+                {project.Skill[0]}
+              </p>
             </motion.div>
           </article>
         ))}

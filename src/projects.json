@@ -40,6 +40,7 @@
     "description": "Visualizar el diseño óptimo de la interfaz según el tamaño de la pantalla del dispositivo",
     "reactJs": [],
     "Skill": [
+      "JavaScript",
       "Tailwind Css"
     ],
     "LiveSite": "https://diego2drm.github.io/sunnyside-agency-landing-page/",
@@ -53,7 +54,7 @@
     "reactJs": [],
     "Skill": [
       "React JS",
-      "Bootstrap 5",  
+      "Bootstrap 5",
       "Sass"
     ],
     "LiveSite": "https://news-homepage-main-diego-2d.netlify.app/",
@@ -79,7 +80,8 @@
     "description": "Relleno de formulario interactivo. Aparecerán errores si no se responde adecuadamente.",
     "reactJs": [],
     "Skill": [
-      "React JS + TypeScript",
+      "React JS",
+      "TypeScript",
       "Tailwind Css"
     ],
     "LiveSite": "https://diego2drm.github.io/interactive-card-details-form/",
@@ -105,7 +107,8 @@
     "description": "Cambiar entre la visualización de estadísticas diarias, semanales y mensuales",
     "reactJs": [],
     "Skill": [
-      "React JS + TypeScript",
+      "React JS",
+      "TypeScript",
       "Css Module"
     ],
     "LiveSite": "https://diego2drm.github.io/Time-tracking-dashboard/#/weekly",
@@ -118,10 +121,51 @@
     "description": "Navegar por el control deslizante utilizando el mouse/trackpad o el teclado",
     "reactJs": [],
     "Skill": [
-      "React JS + TypeScript",
+      "React JS",
+      "TypeScript",
       "Css Module"
     ],
     "LiveSite": "https://diego2d-room-homepage.netlify.app/",
     "Repository": "https://github.com/Diego2Drm/Room-homepage"
+  },
+  {
+    "id": 9,
+    "img": "src/assets/projects-images/digital-baking.png",
+    "title": "Digital bank landing",
+    "description": "Ver el diseño óptimo de la interfaz dependiendo del tamaño de pantalla del dispositivo",
+    "reactJs": [],
+    "Skill": [
+      "Astro",
+      "TypeScript",
+      "Css3"
+    ],
+    "LiveSite": "https://digitalbank-landing-page-diego2d.netlify.app/",
+    "Repository": "https://github.com/Diego2Drm/digitalbank-landing-page"
+  },
+  {
+    "id": 10,
+    "img": "src/assets/projects-images/recipes-api.png",
+    "title": "Recipes API TheMealDB",
+    "description": "Este proyecto personal utiliza sus recursos para inspirar nuevas ideas culinarias y facilitar la exploración gastronómica",
+    "Skill": [
+      "Astro",
+      "TypeScript",
+      "TailwindCss"
+    ],
+    "LiveSite": "https://recipes-themealdb-diego2d.netlify.app/",
+    "Repository": "https://github.com/Diego2Drm/Recipe-API-TheMealDB"
+  },
+  {
+    "id": 11,
+    "img": "src/assets/projects-images/property-listing.png",
+    "title": "Property Listing",
+    "description": "Aplicación web para explorar propiedades con filtros dinámicos y diseño moderno.",
+    "Skill": [
+      "Angular",
+      "TypeScript",
+      "Sass Css"
+    ],
+    "LiveSite": "https://property-listing-angular.vercel.app/",
+    "Repository": "https://github.com/Diego2Drm/property-listing-angular"
   }
 ]
