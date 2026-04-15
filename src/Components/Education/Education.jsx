@@ -26,7 +26,7 @@ function Education() {
         {context.certificateImg.map((item) => (
           <div className="w-80" key={item.id}>
             <motion.figure
-              className="w-80 mb-5 border-2 border-blue-500 rounded-3xl overflow-hidden"
+              className="w-80 h-56 mb-5 border-2 border-blue-500 rounded-3xl overflow-hidden"
               onClick={() => showCertificates(item.certification)}
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {
@@ -35,7 +35,7 @@ function Education() {
               viewport={{once: true, amount: 0.8}}
             >
               <img
-                className="rounded-3xl duration-500 hover:scale-125 cursor-pointer"
+                className="duration-500 hover:scale-125 cursor-pointer h-full w-full"
                 src={courseMap[item.certification]}
                 alt="certificate"
               />

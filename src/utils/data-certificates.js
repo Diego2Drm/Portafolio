@@ -24,4 +24,12 @@ export const dataCertificates = [
     id: 6,
     certification: 'src/assets/certifications/curso-react-js-tailwindcss.jpeg',
   },
+  {
+    id: 7,
+    certification: 'src/assets/certifications/curso-de-signals-Angular.png',
+  },
+  {
+    id: 8,
+    certification: 'src/assets/certifications/curso-fundamentos-SQL.png',
+  },
 ]

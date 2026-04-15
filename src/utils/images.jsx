@@ -16,6 +16,8 @@ import course3 from '../assets/certifications/curso-responsive-design.jpeg'
 import course4 from '../assets/certifications/curso-fundamentos-js.jpeg'
 import course5 from '../assets/certifications/curso-fundamentos-sass.jpeg'
 import course6 from '../assets/certifications/curso-react-js-tailwindcss.jpeg'
+import course7 from '../assets/certifications/curso-de-signals-Angular.png'
+import course8 from '../assets/certifications/curso-fundamentos-SQL.png'
 
 
 export const ImageMap = {
@@ -40,4 +42,6 @@ export const courseMap = {
   "src/assets/certifications/curso-fundamentos-js.jpeg": course4,
   "src/assets/certifications/curso-fundamentos-sass.jpeg": course5,
   "src/assets/certifications/curso-react-js-tailwindcss.jpeg": course6,
+  "src/assets/certifications/curso-de-signals-Angular.png": course7,
+  "src/assets/certifications/curso-fundamentos-SQL.png": course8,
 } 
