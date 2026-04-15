@@ -23,7 +23,8 @@ function Projects() {
     "React JS": "#61DAFB",
     "Angular": "#DD0031",
     "Astro": "#FF5D01",
-    "JavaScript": "##F0DB4F"
+    "JavaScript": "#F0DB4F",
+    "Next js": "#FFF"
   };
 
   return (

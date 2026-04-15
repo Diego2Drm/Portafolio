@@ -167,5 +167,31 @@
     ],
     "LiveSite": "https://property-listing-angular.vercel.app/",
     "Repository": "https://github.com/Diego2Drm/property-listing-angular"
+  },
+  {
+    "id": 12,
+    "img": "src/assets/projects-images/movie-search.png",
+    "title": "Movie Search",
+    "description": "Aplicación web responsivo para buscar peliculas por nombre",
+    "Skill": [
+      "Angular",
+      "TypeScript",
+      "Sass Css"
+    ],
+    "LiveSite": "https://movie-search-pied-ten.vercel.app/",
+    "Repository": "https://github.com/Diego2Drm/movie-search"
+  },
+  {
+    "id": 13,
+    "img": "src/assets/projects-images/space-tourism.png",
+    "title": "Space tourism",
+    "description": "Sitio web de varias páginas sobre turismo espacial",
+    "Skill": [
+      "Next js",
+      "TypeScript",
+      "Tailwind Css"
+    ],
+    "LiveSite": "https://space-tourism-multi-page-website-lime.vercel.app/home",
+    "Repository": "https://github.com/Diego2Drm/Space-tourism-multi-page-website"
   }
 ]

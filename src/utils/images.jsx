@@ -10,6 +10,8 @@ import img9 from '../assets/projects-images/room-homepage.png'
 import img10 from '../assets/projects-images/digital-baking.png'
 import img11 from '../assets/projects-images/recipes-api.png'
 import img12 from '../assets/projects-images/property-listing.png'
+import img13 from '../assets/projects-images/movie-search.png'
+import img14 from '../assets/projects-images/space-tourism.png'
 import course1 from '../assets/certifications/curso-practico-frontend-dev.jpeg'
 import course2 from '../assets/certifications/curso-definitivo-html-css.jpeg'
 import course3 from '../assets/certifications/curso-responsive-design.jpeg'
@@ -33,6 +35,8 @@ export const ImageMap = {
   "src/assets/projects-images/digital-baking.png": img10,
   "src/assets/projects-images/recipes-api.png": img11,
   "src/assets/projects-images/property-listing.png": img12,
+  "src/assets/projects-images/movie-search.png": img13,
+  "src/assets/projects-images/space-tourism.png": img14,
 };
 
 export const courseMap = {
